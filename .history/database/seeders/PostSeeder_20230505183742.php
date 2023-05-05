@@ -4,7 +4,6 @@ namespace Database\Seeders;
 use Illuminate\Support\Str;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Posteos;
 use Illuminate\Support\Facades\DB;
 class PostSeeder extends Seeder
 {
@@ -19,7 +18,6 @@ class PostSeeder extends Seeder
         \App\Models\Posteos::factory()->create([
             'id_user' => random_int(1, 2),
             'imagen' => 'images.jpg',
-            'descripciom' => Str::random(40),
         ]);
     }
 }
